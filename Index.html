@@ -1,50 +1,127 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogger Template</title>
-  <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт закрыт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, #fff, #a8b2d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .message {
+            font-size: 1.4rem;
+            color: #a8b2d1;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .date {
+            font-size: 1rem;
+            color: #5d657c;
+            margin-top: 4rem;
+            font-weight: 400;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container > * {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .message {
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+
+        .date {
+            animation-delay: 0.6s;
+            opacity: 0;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .message {
+                font-size: 1.2rem;
+            }
+            
+            .icon {
+                font-size: 4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .message {
+                font-size: 1.1rem;
+            }
+            
+            .icon {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">Новости от школьников (приватный сайт)</div>
-    <div class="search">
-      <input type="text" placeholder="Search...">
-      <button>Search</button>
+    <div class="container">
+        <div class="icon">✖</div>
+        <h1>Сайт прекратил поддержку</h1>
+        <p class="message">Эпоха этого проекта завершилась. Спасибо всем, кто был с нами.</p>
+        <p class="date">Последнее обновление: 2023</p>
     </div>
-  </div>
-  <div class="navbar">
-    <a class="active" href="#">Главная</a>
-    <a href="style/о нас.html">О нас</a>
-    <a href="style/Хочешь предложить новость или стать модератором предлагаемых постов.html">Хочешь предложить новость или стать модератором предлагаемых постов?</a>
-    <a href="style/контакты.html">контакты</a>
-  </div>
-  <div class="main">
-    <div class="slider">
-      <img src="images/15d1c7d25e936e26523a725e00d64905.jpeg" alt="Earth and Moon">
-      <div>
-        <h2>Пока здесь нет публикаций, но вы можете исправить это, предлагая посты на email kiamovdaniel864@gmail.com, так же если хотите стать модератором данного сайта то пишите на тот же email.</h2>
-        <p>Пикми савелий </p>
-        <p>пикми савелий</p>
-      </div>
-    </div>
-    <div class="nav-buttons">
-      <button>Предыдущий</button>
-      <button>Следующий пост</button>
-    </div>
-    <div class="content">
-      <div>
-        <h3>Напоминаю! пока тут нет постов</h3>
-        <p>Пикми Савелий</p>
-      </div>
-      <div>
-        <h3>И тут тоже</h3>
-        <p>Пикми савелий</p>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
-
